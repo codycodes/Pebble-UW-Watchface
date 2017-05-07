@@ -89,17 +89,17 @@ static void main_window_load(Window *window) {
   
   layer_set_update_proc(s_text_layer, layer_update_proc);
   
-  s_date_layer = text_layer_create(GRect(0, 125, 144, 155));
+  s_date_layer = text_layer_create(GRect(0, 120, 144, 155));
   
   // Improve the layout to be more like a watchface
   text_layer_set_background_color(s_time_layer, GColorClear);
-  text_layer_set_text_color(s_time_layer, GColorRichBrilliantLavender);
+  text_layer_set_text_color(s_time_layer, GColorYellow);
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
   
   // Improve the layout to be more like a watchface
   text_layer_set_background_color(s_date_layer, GColorClear);
-  text_layer_set_text_color(s_date_layer, GColorRichBrilliantLavender);
+  text_layer_set_text_color(s_date_layer, GColorYellow);
   text_layer_set_text_alignment(s_date_layer, GTextAlignmentCenter);
   
   // Create GFont
@@ -136,7 +136,7 @@ static void init() {
   s_main_window = window_create();
   
   //Set the background color of the window
-  window_set_background_color(s_main_window, GColorOxfordBlue);
+  window_set_background_color(s_main_window, GColorIndigo);
   
   // Set handlers to manage the elements inside the Window
   window_set_window_handlers(s_main_window, (WindowHandlers) {

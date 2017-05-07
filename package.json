@@ -11,16 +11,16 @@
         "resources": {
             "media": [
                 {
-                    "file": "fonts/italic.ttf",
-                    "name": "FONT_ITALIC_LOWERCASE_8",
-                    "targetPlatforms": null,
-                    "type": "font"
-                },
-                {
                     "file": "images/Washington_Huskies_logo.png",
                     "name": "UW_LOGO",
                     "targetPlatforms": null,
                     "type": "bitmap"
+                },
+                {
+                    "file": "fonts/italic.ttf",
+                    "name": "FONT_ITALIC_LOWERCASE_8",
+                    "targetPlatforms": null,
+                    "type": "font"
                 },
                 {
                     "file": "fonts/Digital.ttf",
