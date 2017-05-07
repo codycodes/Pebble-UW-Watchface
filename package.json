@@ -1,0 +1,45 @@
+{
+    "author": "codygagnon@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "my-first-watchface",
+    "pebble": {
+        "displayName": "My First Watchface",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "fonts/italic.ttf",
+                    "name": "FONT_ITALIC_LOWERCASE_8",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "images/Washington_Huskies_logo.png",
+                    "name": "UW_LOGO",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "fonts/Digital.ttf",
+                    "name": "FONT_DIGITAL_30",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "189013d5-c2d9-4606-a182-e5def0302b69",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
