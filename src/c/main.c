@@ -25,7 +25,7 @@ static void update_time() {
   strftime(s_time_buffer, sizeof(s_time_buffer), clock_is_24h_style() ?
                                           "%H:%M" : "%I:%M", tick_time);
 
-  strftime(s_date_buffer, sizeof(s_date_buffer), "%b%e", tick_time);
+  strftime(s_date_buffer, sizeof(s_date_buffer), "%a%e", tick_time);
   
   // Display this time on the TextLayer
   text_layer_set_text(s_time_layer, s_time_buffer);
@@ -43,15 +43,15 @@ static void layer_update_proc(Layer *layer, GContext *ctx) {
   // Custom drawing happens here
 
   // Load the font
-  GFont font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ITALIC_LOWERCASE_8));
+  GFont font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ITALIC_LOWERCASE_10));
   // Set the color
-  graphics_context_set_text_color(ctx, GColorRed);
+  graphics_context_set_text_color(ctx, GColorRichBrilliantLavender);
   
   char *text = "codes <3 chuan";
   // Determine a reduced bounding box
   GRect layer_bounds = layer_get_bounds(layer);
-  GRect text_bounds = GRect(layer_bounds.origin.x, 160,
-                       layer_bounds.size.w, 160);
+  GRect text_bounds = GRect(layer_bounds.origin.x, 155,
+                       layer_bounds.size.w, 155);
   
   
   // Calculate the size of the text to be drawn, with restricted space
